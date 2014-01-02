@@ -1,4 +1,4 @@
-//get url parameters
+//get url parameters. i.e. index.html?recipient=ADDRESS
 function getUrlVars()
 {
     var vars = [], hash;
@@ -14,6 +14,7 @@ function getUrlVars()
 
 var communicate = function( ) {
 	$.ajax({
+		  //url of kibble app. See: https://github.com/scottmotte/kibble
 		  url: "http://localhost:3000/so/get_new_address",
 		  context: document.body
 		}).done(function(data) {
@@ -22,8 +23,6 @@ var communicate = function( ) {
 	});
 }
 
-
-// ???? how2redirect if user doesn't include url params ?recipient=
 
 if (getUrlVars()['recipient']) { 
 		// validate user-input recipient address
