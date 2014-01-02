@@ -1,4 +1,25 @@
-/* 	Plaintshirt template 
-	Main stylesheet */
+html {
+
+}
+body {
+	font-size: 16px;
+	background: url(../img/Doge_bg.jpg) no-repeat center 1em fixed;
+	-webkit-background-size: 100vw 100vh;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100vw 100vh;
+}
+
+input[type='text'] {
+	width: 18.75em;
+}
+
+button[type='submit'] {
+	padding: 1em;
+
+}
 
 
+.troll {
+
+}
