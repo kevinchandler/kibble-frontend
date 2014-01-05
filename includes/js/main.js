@@ -15,8 +15,7 @@ function getUrlVars()
 var communicate = function( ) {
 	$.ajax({
 		  //url of kibble app. See: https://github.com/scottmotte/kibble
-		  url: "http://localhost:3000/so/get_new_address",
-		  context: document.body
+		  url: "http://localhost:3000/so/get_new_address"
 		}).done(function(data) {
 			$('.generatedAddress').text('Send all coinz to: ' + data.data);
 			$('.troll').removeClass('hidden'); 
